@@ -5,6 +5,7 @@ const showList = (data) => {
 
   heading.innerHTML = 'Recent Scores';
   headingBtn.textContent = 'Refresh';
+  headingBtn.id = 'refresh-btn';
 
   scoreContainer.appendChild(heading);
   heading.appendChild(headingBtn);
@@ -12,7 +13,7 @@ const showList = (data) => {
   data.forEach((item) => {
     const listItem = document.createElement('li');
     listItem.id = 'li-items';
-    listItem.textContent = `${item.name} : ${item.score}`;
+    listItem.textContent = `${item.user} : ${item.score}`;
     scoreContainer.appendChild(listItem);
   });
 };
