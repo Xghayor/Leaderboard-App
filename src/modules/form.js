@@ -1,21 +1,24 @@
+import postData from './postData';
+
 const createForm = () => {
   const formData = document.getElementById('form-container');
   const formLabel = document.createElement('h2');
   formLabel.innerHTML = 'Add your score';
 
   const listForm = document.createElement('form');
-  listForm.action = '/submit';
-  listForm.method = 'POST';
+  listForm.id = 'game-form';
 
   const nameInput = document.createElement('input');
   nameInput.type = 'text';
-  nameInput.name = 'name1';
+  nameInput.name = 'user';
+  nameInput.id = 'user';
   nameInput.placeholder = 'Your name';
   nameInput.className = 'form-input';
 
   const scoreInput = document.createElement('input');
   scoreInput.type = 'text';
-  scoreInput.name = 'scores';
+  scoreInput.name = 'score';
+  scoreInput.id = 'score';
   scoreInput.placeholder = 'Your score';
   scoreInput.className = 'form-input';
 
@@ -29,6 +32,8 @@ const createForm = () => {
 
   formData.appendChild(formLabel);
   formData.appendChild(listForm);
+
+  postData(listForm);
 };
 
 export default createForm;
