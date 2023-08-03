@@ -86,8 +86,7 @@ To get a local copy up and running, follow these steps:
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- **Using API's**
-- **using async and await**
+- **Adding Styles**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

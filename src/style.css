@@ -1,25 +1,124 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f6f7;
+}
+
+h1 {
+  text-align: left;
+  margin-top: 0;
+  padding: 30px;
+  background-color: #369;
+  color: #fff;
+}
+
+.parent-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
 
 .container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  gap: 60px;
+  gap: 20px;
+  padding: 20px;
 }
 
-#score-container p {
-  border: 1px solid grey;
-  padding: 10px;
+#scores {
+  background-color: #fff;
+  border: 1px solid #d1d1d1;
+  border-radius: 5px;
+  padding: 20px;
+  width: 400px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  height: 400px;
+  overflow: scroll;
+  overflow-x: hidden;
+  position: relative;
+}
+
+#score-container h2 {
+  color: #696;
+  font-weight: 900;
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  font-size: 34px;
+  position: sticky;
+  top: 10px;
+  margin-bottom: 20px;
 }
 
 #score-container button {
-  margin-left: 10px;
+  background-color: #696;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#score-container button:hover {
+  background-color: #4c874c;
 }
 
 .form-input {
   display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
   margin-bottom: 20px;
 }
 
 #li-items {
   list-style-type: none;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f3dede;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(40, 38, 38, 0.5);
+}
+
+#scores::-webkit-scrollbar {
+  width: 6px;
+}
+
+#scores::-webkit-scrollbar-thumb {
+  background-color: #b5b3b3;
+  border-radius: 3px;
+}
+
+#scores::-webkit-scrollbar-thumb:hover {
+  background-color: #5c5757;
+}
+
+#form-btn {
+  background-color: #696;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: box-shadow 0.1s ease;
+  box-shadow: 0 2px 5px rgba(67, 65, 65, 0.9);
+}
+
+#form-btn:active {
+  box-shadow: none;
+  transform: translateY(1px);
+}
+
+#form-container h2 {
+  color: #696;
+  font-size: 34px;
 }

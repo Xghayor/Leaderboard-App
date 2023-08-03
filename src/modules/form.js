@@ -23,6 +23,7 @@ const createForm = () => {
   scoreInput.className = 'form-input';
 
   const formBtn = document.createElement('button');
+  formBtn.id = ('form-btn');
   formBtn.type = 'submit';
   formBtn.textContent = 'Submit';
 
