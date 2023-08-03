@@ -2,13 +2,13 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f9f6f7; /* Light pinkish-grey */
+  background-color: #f9f6f7;
 }
 
 h1 {
   text-align: center;
   padding: 20px 0;
-  background-color: #336699; /* Soft blue */
+  background-color: #369;
   color: #fff;
 }
 
@@ -31,7 +31,7 @@ h1 {
 
 #scores {
   background-color: #fff;
-  border: 1px solid #d1d1d1; /* Light grey */
+  border: 1px solid #d1d1d1;
   border-radius: 5px;
   padding: 20px;
   width: 400px;
@@ -43,7 +43,7 @@ h1 {
 }
 
 #score-container h2 {
-  color: #669966;
+  color: #696;
   font-weight: 900;
   font-family: 'Times New Roman', Times, serif;
   display: flex;
@@ -57,7 +57,7 @@ h1 {
 }
 
 #score-container button {
-  background-color: #669966; /* Soft green */
+  background-color: #696;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -67,7 +67,7 @@ h1 {
 }
 
 #score-container button:hover {
-  background-color: #4c874c; /* Darker green */
+  background-color: #4c874c;
 }
 
 .form-input {
@@ -83,11 +83,10 @@ h1 {
   list-style-type: none;
   padding: 10px;
   border-radius: 5px;
-  background-color: #f3dede; 
+  background-color: #f3dede;
   margin-bottom: 10px;
   box-shadow: 0 2px 4px rgba(40, 38, 38, 0.5);
 }
-
 
 #scores::-webkit-scrollbar {
   width: 6px;
@@ -103,7 +102,7 @@ h1 {
 }
 
 #form-btn {
-  background-color: #669966; /* Soft green */
+  background-color: #696;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -118,7 +117,7 @@ h1 {
   transform: translateY(1px);
 }
 
-#form-container h2{
-  color: #669966;
+#form-container h2 {
+  color: #696;
   font-size: 34px;
 }

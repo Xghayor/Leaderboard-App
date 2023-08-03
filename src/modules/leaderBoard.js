@@ -1,6 +1,6 @@
 const showList = (data) => {
-  const socreHeading = document.getElementById('score-h2')
-  const scoreBoard = document.getElementById('scores')
+  const socreHeading = document.getElementById('score-h2');
+  const scoreBoard = document.getElementById('scores');
   const heading = document.createElement('h2');
   const headingBtn = document.createElement('button');
 
