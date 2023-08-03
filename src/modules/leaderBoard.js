@@ -1,5 +1,6 @@
 const showList = (data) => {
-  const scoreContainer = document.getElementById('score-container');
+  const socreHeading = document.getElementById('score-h2')
+  const scoreBoard = document.getElementById('scores')
   const heading = document.createElement('h2');
   const headingBtn = document.createElement('button');
 
@@ -7,14 +8,14 @@ const showList = (data) => {
   headingBtn.textContent = 'Refresh';
   headingBtn.id = 'refresh-btn';
 
-  scoreContainer.appendChild(heading);
+  socreHeading.appendChild(heading);
   heading.appendChild(headingBtn);
 
   data.forEach((item) => {
     const listItem = document.createElement('li');
     listItem.id = 'li-items';
     listItem.textContent = `${item.user} : ${item.score}`;
-    scoreContainer.appendChild(listItem);
+    scoreBoard.appendChild(listItem);
   });
 };
 
