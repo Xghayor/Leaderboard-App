@@ -44,7 +44,7 @@ LeaderBoard app allows you to submit your score. All data is preserved using ext
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- will be available soon!
+- [Click here] (https://xghayor.github.io/Leaderboard-App/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
