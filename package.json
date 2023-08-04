@@ -1,13 +1,14 @@
 {
   "name": "webpack-demo",
   "version": "1.0.0",
-  "description": "An innovative project exploring new frontiers in technology.",
+  "description": "",
   "private": true,
+  "homepage": "https://github.com/Xghayor/Leaderboard-App/",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
     "start": "webpack serve --open",
-    "deploy": "gh-pages -d dist"
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
